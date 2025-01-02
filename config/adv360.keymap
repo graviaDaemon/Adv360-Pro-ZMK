@@ -90,11 +90,11 @@
 
         layer_Navigation {
             bindings = <
-         &trans        &trans     &trans      &trans       &trans  &trans            &trans                                                           &trans    &trans    &trans    &trans     &trans  &trans  &trans
-         &trans        &trans     &trans      &trans       &trans  &trans            &trans                                                           &trans    &trans    &trans    &trans     &trans  &trans  &trans
-         &trans  &kp LEFT_WIN      &kp C       &kp X        &kp V  &trans            &trans  &kp LEFT_ALT  &kp LCTRL                  &trans  &trans  &trans  &kp HOME   &kp END    &trans     &trans  &trans  &trans
- &kp LEFT_SHIFT        &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans                                     &trans                  &trans                    &trans    &trans    &kp UP     &trans  &trans  &trans
-         &trans        &trans     &trans      &trans       &trans                    &trans        &trans     &trans                  &trans  &trans  &trans            &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+         &trans        &trans      &trans       &trans        &trans  &trans            &trans                                                           &trans    &trans    &trans    &trans     &trans  &trans  &trans
+         &trans        &trans      &trans       &trans        &trans  &trans            &trans                                                           &trans    &trans    &trans    &trans     &trans  &trans  &trans
+         &trans  &kp LEFT_WIN       &kp C        &kp X         &kp V  &trans            &trans  &kp LCTRL  &kp LEFT_ALT                  &trans  &trans  &trans  &kp HOME   &kp END    &trans     &trans  &trans  &trans
+ &kp LEFT_SHIFT        &trans  &macro_cut  &macro_copy  &macro_paste  &trans                                     &trans                  &trans                    &trans    &trans    &kp UP     &trans  &trans  &trans
+         &trans        &trans      &trans       &trans        &trans                    &trans     &trans        &trans                  &trans  &trans  &trans            &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
             >;
         };
 
