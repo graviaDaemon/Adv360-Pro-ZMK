@@ -31,6 +31,129 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        A_uml {
+            bindings = <&A_uml>;
+            key-positions = <46 29 75 35>;
+        };
+
+        A_over {
+            bindings = <&A_over>;
+            key-positions = <29 59 75 38>;
+        };
+
+        a_uml {
+            bindings = <&a_uml>;
+            key-positions = <75 29 35>;
+        };
+
+        a_over {
+            bindings = <&a_over>;
+            key-positions = <75 29 38>;
+        };
+
+        o_uml {
+            bindings = <&o_uml>;
+            key-positions = <75 25>;
+        };
+
+        O_uml {
+            bindings = <&O_uml>;
+            key-positions = <75 59 25>;
+        };
+
+        o_dash {
+            bindings = <&o_dash>;
+            key-positions = <75 38 25>;
+        };
+
+        O_Dash {
+            bindings = <&O_dash>;
+            key-positions = <75 59 25 38>;
+        };
+    };
+
+    macros {
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp X>;
+            label = "CUT";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp C>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp V>;
+            label = "PASTE";
+        };
+
+        a_over: ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_4>;
+            label = "AO";
+        };
+
+        a_uml: a_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_2>;
+            label = "A_UML";
+        };
+
+        A_over: A_over {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_3>;
+            label = "A_OVER";
+        };
+
+        A_uml: A_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_2>;
+            label = "A_UML";
+        };
+
+        o_uml: o_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_8>;
+            label = "O_UML";
+        };
+
+        O_uml: O_uml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_3>;
+            label = "O_UML";
+        };
+
+        o_dash: o_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_8>;
+            label = "O_DASH";
+        };
+
+        O_dash: O_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6>;
+            label = "O_DASH";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,11 +179,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2   &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans   &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &a_over  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans   &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
