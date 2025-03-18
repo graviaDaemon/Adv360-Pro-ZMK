@@ -36,42 +36,42 @@
 
         A_uml {
             bindings = <&A_uml>;
-            key-positions = <46 29 75 35>;
+            key-positions = <46 29 35>;
         };
 
         A_over {
             bindings = <&A_over>;
-            key-positions = <29 59 75 38>;
+            key-positions = <29 59 38>;
         };
 
         a_uml {
             bindings = <&a_uml>;
-            key-positions = <75 29 35>;
+            key-positions = <29 35>;
         };
 
         a_over {
             bindings = <&a_over>;
-            key-positions = <75 29 38>;
+            key-positions = <29 38>;
         };
 
         o_uml {
             bindings = <&o_uml>;
-            key-positions = <75 25>;
+            key-positions = <25 35>;
         };
 
         O_uml {
             bindings = <&O_uml>;
-            key-positions = <75 59 25>;
+            key-positions = <59 25 35>;
         };
 
         o_dash {
             bindings = <&o_dash>;
-            key-positions = <75 38 25>;
+            key-positions = <38 25>;
         };
 
         O_Dash {
             bindings = <&O_dash>;
-            key-positions = <75 59 25 38>;
+            key-positions = <59 25 38>;
         };
     };
 
