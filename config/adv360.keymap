@@ -35,97 +35,97 @@
         compatible = "zmk,combos";
 
         combo_A_uml {
-            bindings = <&A_uml>;
+            bindings = <&cm_A_uml>;
             key-positions = <46 29 35>;
         };
 
         combo_A_over {
-            bindings = <&A_over>;
+            bindings = <&cm_A_over>;
             key-positions = <29 59 38>;
         };
 
         combo_a_uml {
-            bindings = <&a_uml>;
+            bindings = <&cm_a_uml>;
             key-positions = <29 35>;
         };
 
         combo_a_over {
-            bindings = <&a_over>;
+            bindings = <&cm_a_over>;
             key-positions = <29 38>;
         };
 
         combo_o_uml {
-            bindings = <&o_uml>;
+            bindings = <&cm_o_uml>;
             key-positions = <25 35>;
         };
 
         combo_O_uml {
-            bindings = <&O_uml>;
+            bindings = <&cm_O_uml>;
             key-positions = <59 25 35>;
         };
 
         combo_o_dash {
-            bindings = <&o_dash>;
+            bindings = <&cm_o_dash>;
             key-positions = <38 25>;
         };
 
         combo_O_Dash {
-            bindings = <&O_dash>;
+            bindings = <&cm_O_dash>;
             key-positions = <59 25 38>;
         };
     };
 
     macros {
-        a_over: ao {
+        cm_a_over: ao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_4>;
             label = "AO";
         };
 
-        a_uml: a_uml {
+        cm_a_uml: a_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_2>;
             label = "A_UML";
         };
 
-        A_over: A_over {
+        cm_A_over: A_over {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_3>;
             label = "A_OVER";
         };
 
-        A_uml: A_uml {
+        cm_A_uml: A_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_2>;
             label = "A_UML";
         };
 
-        o_uml: o_uml {
+        cm_o_uml: o_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_8>;
             label = "O_UML";
         };
 
-        O_uml: O_uml {
+        cm_O_uml: O_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_3>;
             label = "O_UML";
         };
 
-        o_dash: o_dash {
+        cm_o_dash: o_dash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_8>;
             label = "O_DASH";
         };
 
-        O_dash: O_dash {
+        cm_O_dash: O_dash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6>;
