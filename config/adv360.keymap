@@ -34,42 +34,42 @@
     combos {
         compatible = "zmk,combos";
 
-        A_uml {
+        combo_A_uml {
             bindings = <&A_uml>;
             key-positions = <46 29 35>;
         };
 
-        A_over {
+        combo_A_over {
             bindings = <&A_over>;
             key-positions = <29 59 38>;
         };
 
-        a_uml {
+        combo_a_uml {
             bindings = <&a_uml>;
             key-positions = <29 35>;
         };
 
-        a_over {
+        combo_a_over {
             bindings = <&a_over>;
             key-positions = <29 38>;
         };
 
-        o_uml {
+        combo_o_uml {
             bindings = <&o_uml>;
             key-positions = <25 35>;
         };
 
-        O_uml {
+        combo_O_uml {
             bindings = <&O_uml>;
             key-positions = <59 25 35>;
         };
 
-        o_dash {
+        combo_o_dash {
             bindings = <&o_dash>;
             key-positions = <38 25>;
         };
 
-        O_Dash {
+        combo_O_Dash {
             bindings = <&O_dash>;
             key-positions = <59 25 38>;
         };
