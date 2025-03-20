@@ -37,41 +37,49 @@
         combo_capA_uml {
             bindings = <&cm_capA_uml>;
             key-positions = <46 29 35>;
+            layers = <3>;
         };
 
         combo_capA_over {
             bindings = <&cm_capA_over>;
-            key-positions = <29 59 38>;
+            key-positions = <29 38 46>;
+            layers = <3>;
         };
 
         combo_a_uml {
             bindings = <&cm_a_uml>;
             key-positions = <29 35>;
+            layers = <3>;
         };
 
         combo_a_over {
             bindings = <&cm_a_over>;
             key-positions = <29 38>;
+            layers = <3>;
         };
 
         combo_o_uml {
             bindings = <&cm_o_uml>;
-            key-positions = <25 35>;
+            key-positions = <35 30>;
+            layers = <3>;
         };
 
         combo_capO_uml {
             bindings = <&cm_capO_uml>;
-            key-positions = <59 25 35>;
+            key-positions = <35 30 46>;
+            layers = <3>;
         };
 
         combo_o_dash {
             bindings = <&cm_o_dash>;
-            key-positions = <38 25>;
+            key-positions = <38 30>;
+            layers = <3>;
         };
 
         combo_capO_Dash {
             bindings = <&cm_capO_dash>;
-            key-positions = <59 25 38>;
+            key-positions = <38 30 46>;
+            layers = <3>;
         };
     };
 
