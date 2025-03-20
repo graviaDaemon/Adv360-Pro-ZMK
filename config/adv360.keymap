@@ -31,57 +31,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_capA_uml {
-            bindings = <&cm_capA_uml>;
-            key-positions = <46 29 35>;
-            layers = <3>;
-        };
-
-        combo_capA_over {
-            bindings = <&cm_capA_over>;
-            key-positions = <29 38 46>;
-            layers = <3>;
-        };
-
-        combo_a_uml {
-            bindings = <&cm_a_uml>;
-            key-positions = <29 35>;
-            layers = <3>;
-        };
-
-        combo_a_over {
-            bindings = <&cm_a_over>;
-            key-positions = <29 38>;
-            layers = <3>;
-        };
-
-        combo_o_uml {
-            bindings = <&cm_o_uml>;
-            key-positions = <35 30>;
-            layers = <3>;
-        };
-
-        combo_capO_uml {
-            bindings = <&cm_capO_uml>;
-            key-positions = <35 30 46>;
-            layers = <3>;
-        };
-
-        combo_o_dash {
-            bindings = <&cm_o_dash>;
-            key-positions = <38 30>;
-            layers = <3>;
-        };
-
-        combo_capO_Dash {
-            bindings = <&cm_capO_dash>;
-            key-positions = <38 30 46>;
-            layers = <3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         cm_a_over: lao {
@@ -176,11 +126,11 @@
 
         layer_fn {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                &trans      &trans  &trans  &trans      &trans      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                &trans      &trans  &kp F7  &kp F8      &kp F9      &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp C_VOL_UP      &kp C_BRI_UP  &trans      &trans      &trans  &kp F4  &kp F5      &kp F6      &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &kp C_VOL_DN      &kp C_BRI_DN                          &trans  &kp F1  &kp F2      &kp F3      &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &kp K_PLAY_PAUSE  &kp C_MUTE        &trans        &kp C_PREV  &kp C_NEXT          &trans  &kp C_MENU  &kp C_HELP  &trans   &trans
+&trans  &trans         &trans        &trans        &trans         &trans  &trans                                                                &trans      &trans  &trans  &trans      &trans      &trans   &trans
+&trans  &trans         &trans        &trans        &trans         &trans  &trans                                                                &trans      &trans  &kp F7  &kp F8      &kp F9      &kp F10  &trans
+&trans  &cm_a_over     &cm_a_uml     &cm_o_uml     &cm_o_dash     &trans  &trans  &trans            &kp C_VOL_UP      &kp C_BRI_UP  &trans      &trans      &trans  &kp F4  &kp F5      &kp F6      &kp F11  &trans
+&trans  &cm_capA_over  &cm_capA_uml  &cm_capO_uml  &cm_capO_dash  &trans                            &kp C_VOL_DN      &kp C_BRI_DN                          &trans  &kp F1  &kp F2      &kp F3      &kp F12  &trans
+&trans  &trans         &trans        &trans        &trans                 &trans  &kp K_PLAY_PAUSE  &kp C_MUTE        &trans        &kp C_PREV  &kp C_NEXT          &trans  &kp C_MENU  &kp C_HELP  &trans   &trans
             >;
         };
 
