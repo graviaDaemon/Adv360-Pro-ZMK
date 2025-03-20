@@ -37,56 +37,56 @@
         cm_a_over: lao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_4>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_4 &kt LEFT_ALT>;
             label = "lAO";
         };
 
         cm_a_uml: lau {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_2>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_2 &kt LEFT_ALT>;
             label = "LAU";
         };
 
         cm_capA_over: CAO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_3>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_3 &kt LEFT_ALT>;
             label = "CAO";
         };
 
         cm_capA_uml: CAU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_2>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_2 &kt LEFT_ALT>;
             label = "CAU";
         };
 
         cm_o_uml: lou {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_8>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_8 &kt LEFT_ALT>;
             label = "LOU";
         };
 
         cm_capO_uml: COU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_3>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_3 &kt LEFT_ALT>;
             label = "COU";
         };
 
         cm_o_dash: lod {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_8>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_4 &kp NUMBER_8 &kt LEFT_ALT>;
             label = "LOD";
         };
 
         cm_capO_dash: COD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6>;
+            bindings = <&kt LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6 &kt LEFT_ALT>;
             label = "COD";
         };
     };
@@ -116,7 +116,7 @@
 
         layer_num {
             bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans  &tog 0                                         &kp DOLLAR        &kp POUND              &kp KP_NUMLOCK   &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp EXCL
+&trans   &trans  &trans  &trans  &trans  &trans  &trans                                         &kp DOLLAR        &kp POUND              &kp KP_NUMLOCK   &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp EXCL
 &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans                                         &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp PERCENT
 &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp CARET
 &trans   &trans  &trans  &trans  &trans  &trans                  &trans      &trans                               &kp AT_SIGN            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &kp COLON
@@ -136,11 +136,11 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &trans        &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                   &trans                  &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader             &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &rgb_ug RGB_MEFS_CMD 5  &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                             &trans      &trans                                          &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
             >;
         };
 
@@ -148,7 +148,7 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                    &mo 4          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                    &none          &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 0     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &trans     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none          &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                         &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 3      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
             >;
