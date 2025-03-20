@@ -34,13 +34,13 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_A_uml {
-            bindings = <&cm_A_uml>;
+        combo_capA_uml {
+            bindings = <&cm_capA_uml>;
             key-positions = <46 29 35>;
         };
 
-        combo_A_over {
-            bindings = <&cm_A_over>;
+        combo_capA_over {
+            bindings = <&cm_capA_over>;
             key-positions = <29 59 38>;
         };
 
@@ -59,8 +59,8 @@
             key-positions = <25 35>;
         };
 
-        combo_O_uml {
-            bindings = <&cm_O_uml>;
+        combo_capO_uml {
+            bindings = <&cm_capO_uml>;
             key-positions = <59 25 35>;
         };
 
@@ -69,8 +69,8 @@
             key-positions = <38 25>;
         };
 
-        combo_O_Dash {
-            bindings = <&cm_O_dash>;
+        combo_capO_Dash {
+            bindings = <&cm_capO_dash>;
             key-positions = <59 25 38>;
         };
     };
@@ -90,14 +90,14 @@
             label = "A_UML";
         };
 
-        cm_A_over: A_over {
+        cm_capA_over: A_over {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_3>;
             label = "A_OVER";
         };
 
-        cm_A_uml: A_uml {
+        cm_capA_uml: A_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_2>;
@@ -111,7 +111,7 @@
             label = "O_UML";
         };
 
-        cm_O_uml: O_uml {
+        cm_capO_uml: O_uml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_1 &kp NUMBER_5 &kp NUMBER_3>;
@@ -125,7 +125,7 @@
             label = "O_DASH";
         };
 
-        cm_O_dash: O_dash {
+        cm_capO_dash: O_dash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6>;
