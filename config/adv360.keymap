@@ -166,7 +166,7 @@
 
         layer_num {
             bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans  &trans                                         &kp DOLLAR        &kp POUND              &kp KP_NUMLOCK   &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp EXCL
+&trans   &trans  &trans  &trans  &trans  &trans  &tog 0                                         &kp DOLLAR        &kp POUND              &kp KP_NUMLOCK   &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp EXCL
 &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans                                         &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp PERCENT
 &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp CARET
 &trans   &trans  &trans  &trans  &trans  &trans                  &trans      &trans                               &kp AT_SIGN            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &kp COLON
