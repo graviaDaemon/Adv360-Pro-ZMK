@@ -89,6 +89,13 @@
             bindings = <&kt LEFT_ALT &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_1 &kp NUMBER_6 &kt LEFT_ALT>;
             label = "COD";
         };
+
+        lock_win: lock_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp L>;
+            label = "LOCK_WIN";
+        };
     };
 
     keymap {
